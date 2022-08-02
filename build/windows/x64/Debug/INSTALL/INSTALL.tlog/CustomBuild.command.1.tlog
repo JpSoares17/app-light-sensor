@@ -1,0 +1,10 @@
+^C:\USERS\JOAOB\DOCUMENTS\CIÊNCIAS DA COMPUTAÇÃO\IHC\LIGHT_TEST\BUILD\WINDOWS\CMAKEFILES\17F244D9129B77B5D2909C85C5567E78\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
